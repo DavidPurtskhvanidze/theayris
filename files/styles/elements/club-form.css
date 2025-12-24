@@ -48,29 +48,15 @@
     font-size: 12px;
     text-align: center;
     letter-spacing: 0.05em;
-    margin-top: 24px;
 }
 
 .club-form-agreements a {
     text-decoration: underline;
 }
-.club-form-agreements .checkbox {
-    align-items: start;
-    margin-bottom: 16px;
-}
-.club-form-agreements .checkbox__control {
-    margin-top: 0.2em;
-    margin-inline-end: 16px;
-}
-.club-form-agreements .checkbox__label {
-    font-size: 12px;
-    text-align: start;
-    letter-spacing: 0.05em;
-    line-height: 1.3;
-}
 
 .club-form-wrapper form {
     width: 100%;
+    margin-bottom: 32px;
 }
 
 .club-form-wrapper .input-container {
@@ -80,6 +66,7 @@
 .club-form-wrapper .input-field {
     font-size: 16px;
 }
+
 .club-form-wrapper .input-label {
     font-size: 16px;
 }

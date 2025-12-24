@@ -197,6 +197,7 @@ fieldset {
     padding-left: 38px;
     overflow: hidden;
     height: 0;
+    width: 100%; /* alexfix ������ */
 }
 .radio-checkbox-info span {
     margin-top: 10px;
