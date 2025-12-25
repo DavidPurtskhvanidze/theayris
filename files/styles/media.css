@@ -342,10 +342,12 @@
     /*Club form modal*/
     .club-form-modal {
         max-width: 370px;
-        padding: 20px 28px;
     }
     .club-form-modal-picture {
         width: 370px;
+    }
+    .club-form-modal .club-form-descriptor {
+        font-size: 13px;
     }
     /*Club form modal*/
 
@@ -652,6 +654,9 @@
     /*FAQ*/
 
     /*Club form modal*/
+    .club-form-modal {
+        padding: 18px 18px 28px;
+    }
     .club-form-modal-wrapper {
         grid-template-columns: 1fr;
     }
@@ -965,6 +970,9 @@
     }
     .club-form-modal .club-form-descriptor {
         margin-bottom: 25px;
+    }
+    .club-form-modal .club-form-descriptor {
+        font-size: 11px;
     }
     /*Club form modal*/
 }
