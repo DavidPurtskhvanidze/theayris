@@ -347,7 +347,7 @@
         width: 370px;
     }
     .club-form-modal .club-form-descriptor {
-        font-size: 13px;
+        font-size: 16px;
     }
     /*Club form modal*/
 
@@ -965,14 +965,14 @@
         display: none;
     }
     .club-form-modal .club-form-title {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 20px;
     }
     .club-form-modal .club-form-descriptor {
         margin-bottom: 25px;
     }
     .club-form-modal .club-form-descriptor {
-        font-size: 11px;
+        font-size: 14px;
     }
     /*Club form modal*/
 }

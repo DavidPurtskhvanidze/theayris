@@ -20,12 +20,11 @@
 
 .club-form-descriptor {
     font-style: italic;
-    font-size: 16px;
+    font-size: clamp(13px, calc(15 / var(--clamp-width) * 100vw), 15px);
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 35px;
 }
-
 .club-form-descriptor_icon {
     padding: 0 30px;
     position: relative;
@@ -142,7 +141,7 @@
 }
 
 .club-form-modal .club-form-title {
-    font-size: 25px;
+    font-size: 23px;
     line-height: 1.2;
     margin-bottom: 15px;
 }
@@ -151,7 +150,9 @@
     font-family: 'RoundhandWeb', serif;
     font-weight: 500;
 }
-
+.club-form-modal .club-form-descriptor {
+    font-size: 18px;
+}
 .club-form-modal .club-form-descriptor_icon {
     padding: 0;
 }
