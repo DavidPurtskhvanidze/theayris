@@ -236,6 +236,9 @@
         color: var(--color-dark-2);
         transition: transform 0.3s ease;
     }
+    .marquee-wrap ~ .header .header-menu-wrapper {
+        top: calc(var(--header-height) + var(--marquee-box-height));
+    }
     .header-menu-wrapper.open {
         transform: translateX(100%);
         box-shadow: 10px 0 0 0 rgba(0, 0, 0, 0.1);
@@ -338,10 +341,11 @@
 
     /*Club form modal*/
     .club-form-modal {
-        position: relative;
-        bottom: unset;
-        right: unset;
         max-width: 370px;
+        padding: 20px 28px;
+    }
+    .club-form-modal-picture {
+        width: 370px;
     }
     /*Club form modal*/
 
@@ -558,7 +562,7 @@
         display: none;
     }
     .product-button-wrapper {
-        display: none;
+        /*display: none;*/
     }
     .product-mobile-button-wrapper {
         display: block;
@@ -600,9 +604,13 @@
     .basket-card-list-open {
         display: flex;
     }
+    /* fixalex */
+    .fx-basket-list-open.hidden {
+        display: none;
+    }
     .basket-card-list {
         overflow: hidden;
-        height: 0;
+        /*height: 0;*/ /* fixalex */
         transition: height 0.4s ease;
     }
     .basket-card-list .card-horizontal:first-child {
@@ -619,6 +627,11 @@
     }
     .basket-summary .basket-summary__agreements {
         display: none;
+    }
+    /* fixalex ������� ����� ������ ���� */
+    .fieldset,
+    .fieldset .gap {
+        gap: 12px 2px;
     }
     /*Basket*/
 
@@ -638,6 +651,11 @@
     }
     /*FAQ*/
 
+    /*Club form modal*/
+    .club-form-modal-wrapper {
+        grid-template-columns: 1fr;
+    }
+    /*Club form modal*/
 
     /*Footer*/
     .footer {
@@ -798,7 +816,7 @@
         gap: 24px;
     }
     .card-horizontal__info-count {
-        display: none;
+        /*display: none;*/
     }
     .card-horizontal__info-bottom .input-count {
         display: flex;
@@ -933,8 +951,13 @@
 @media (max-width: 372px) {
     /*Club form modal*/
     .club-form-modal {
-        padding: 35px 15px 15px;
         max-width: 320px;
+    }
+    .club-form-modal-picture {
+        width: 320px;
+    }
+    .club-form-modal .club-form-agreements .checkbox__label br {
+        display: none;
     }
     .club-form-modal .club-form-title {
         font-size: 20px;
