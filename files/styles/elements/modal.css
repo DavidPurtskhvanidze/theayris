@@ -104,6 +104,35 @@
 }
 /*fancybox*/
 
+/*modal-delivery-info*/
+.modal-delivery-info {
+    max-width: 580px;
+    width: 100%;
+}
+.modal-delivery-info *:focus-visible {
+    outline: none;
+}
+.modal-delivery-info-content {
+    max-width: 396px;
+    width: 100%;
+    margin: 0 auto 44px;
+}
+.modal-delivery-info .modal-title {
+    text-align: center;
+}
+.modal-delivery-info ul {
+    padding-left: 20px;
+}
+.modal-delivery-info ul li {
+    font-size: clamp(14px, calc(16 / var(--clamp-width) * 100vw), 16px);
+    line-height: 23px;
+    letter-spacing: normal;
+}
+.modal-delivery-info .button_link {
+    margin-top: clamp(14px, calc(24 / var(--clamp-width) * 100vw), 24px);
+}
+/*modal-delivery-info*/
+
 /*Mobile XS*/
 @media (max-width: 480px) {
     .modal_xs-bottom-position .modal {

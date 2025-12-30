@@ -45,6 +45,9 @@ fieldset {
     position: relative;
     margin-inline-end: 20px;
 }
+.checkbox__invalid .checkbox__control {
+    border: 0.5px solid var(--color-marie-antoinette);
+}
 .checkbox__control:after {
     content: '';
     display: block;
@@ -56,6 +59,10 @@ fieldset {
     background-color: var(--color-accent);
     width: 80%;
     height: 80%;
+}
+.checkbox.checkbox__invalid .checkbox__input:checked ~ .checkbox__control:after,
+.checkbox.checkbox__invalid input:checked ~ .checkbox__control:after {
+    background-color: var(--color-marie-antoinette);
 }
 .checkbox__big-control {
     min-width: var(--checkbox-big-width);
@@ -106,6 +113,12 @@ fieldset {
     line-height: 1;
     color: var(--color-dark-3);
 }
+.checkbox__invalid .checkbox__label {
+    color: var(--color-marie-antoinette);
+}
+.checkbox__label a {
+    text-decoration: underline;
+}
 .checkbox__color-label {
     display: inline-block;
     border-radius: 50%;
@@ -141,6 +154,9 @@ fieldset {
     position: relative;
     margin-inline-end: 20px;
 }
+.radio__invalid .radio__control {
+    border: 0.5px solid var(--color-marie-antoinette);
+}
 .radio__control:after {
     content: '';
     display: block;
@@ -152,6 +168,10 @@ fieldset {
     background-color: var(--color-accent);
     width: 80%;
     height: 80%;
+}
+.radio.radio__invalid .radio__input:checked ~ .radio__control:after,
+.radio.radio__invalid input:checked ~ .radio__control:after {
+    background-color: var(--color-marie-antoinette);
 }
 .radio__big-control {
     width: var(--radio-big-width);
@@ -177,6 +197,12 @@ fieldset {
     line-height: 1;
     color: var(--color-dark-3);
 }
+.radio__invalid .radio__label {
+    color: var(--color-marie-antoinette);
+}
+.radio__label a {
+    text-decoration: underline;
+}
 .radio__color-label {
     display: inline-block;
     border-radius: 50%;
@@ -199,6 +225,12 @@ fieldset {
     height: 0;
     width: 100%; /* alexfix ������ */
 }
+.radio__invalid .radio-checkbox-info {
+    color: var(--color-marie-antoinette);
+}
+.checkbox__invalid .radio-checkbox-info {
+    color: var(--color-marie-antoinette);
+}
 .radio-checkbox-info span {
     margin-top: 10px;
     display: inline-block;
@@ -210,11 +242,29 @@ fieldset {
 .radio input:checked ~ .radio-checkbox-info {
     height: auto;
 }
-.checkbox .checkbox__input:checked ~ .radio-checkbox-info:after,
-.checkbox input:checked ~ .radio-checkbox-info:after {
+.checkbox .checkbox__input:checked ~ .radio-checkbox-info,
+.checkbox input:checked ~ .radio-checkbox-info {
     height: auto;
 }
 /*Radio Checkbox Info*/
+
+/*Radio Checkbox Info Button (i)*/
+.radio-checkbox-info-button {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0C13.9629 0 18 4.03714 18 9C18 13.9629 13.9629 18 9 18C4.03714 18 0 13.9629 0 9C0 4.03714 4.03714 0 9 0ZM9 16.7143C13.2533 16.7143 16.7143 13.2542 16.7143 9C16.7143 4.74665 13.2533 1.28571 9 1.28571C4.74665 1.28571 1.28572 4.74665 1.28572 9C1.28572 13.2542 4.74665 16.7143 9 16.7143Z' fill='%234B4947'/%3E%3Cpath d='M9.03755 8V13M9.08755 5V5.1H8.98755V5H9.08755Z' stroke='%234B4947' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.radio__invalid .radio-checkbox-info-button,
+.checkbox__invalid .radio-checkbox-info-button {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0C13.9629 0 18 4.03714 18 9C18 13.9629 13.9629 18 9 18C4.03714 18 0 13.9629 0 9C0 4.03714 4.03714 0 9 0ZM9 16.7143C13.2533 16.7143 16.7143 13.2542 16.7143 9C16.7143 4.74665 13.2533 1.28571 9 1.28571C4.74665 1.28571 1.28572 4.74665 1.28572 9C1.28572 13.2542 4.74665 16.7143 9 16.7143Z' fill='%23DDA499'/%3E%3Cpath d='M9.03755 8V13M9.08755 5V5.1H8.98755V5H9.08755Z' stroke='%23DDA499' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+/*Radio Checkbox Info Button (i)*/
 
 
 /*Color Radio*/
