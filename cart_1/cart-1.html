@@ -442,11 +442,6 @@
                 Я соглашаюсь на обработку персональных данных для оформления заказа<br>
                 и в соответствии <a href="https://theayris.ru/publichnaya-oferta" target="_blank">Публичной офертой</a>
               </span>
-              <span class="radio-checkbox-info">
-                  <span>
-                      Бесплатная доставка заказов на сумму от 20 000 руб. Стоимость доставки заказов до 20 000 руб. зависит от округа РФ
-                  </span>
-              </span>
             </label>
             <label class="checkbox">
               <input class="checkbox__input required" type="checkbox" id="2222">
@@ -488,7 +483,7 @@
 
           <fieldset class="fieldset fx-hidden-poles fx-onclik" id="deliveries" style="">
 
-            <label class="radio radio__invalid delivery">
+            <label class="radio">
               <input class="radio__input required" type="radio" name="delivery" value="2" id="delivery_2" data-payments="[2,3,1]">
               <span class="radio__control"></span>
               <span class="radio__label">
@@ -500,7 +495,7 @@
                   </span>
               </span>
             </label>
-            <label class="radio delivery fx-primerka-label" style="">
+            <label class="radio delivery radio__invalid delivery">
               <input class="radio__input required" type="radio" name="delivery" value="7" id="delivery_7" data-payments="[1]">
               <span class="radio__control"></span>
               <span class="radio__label">
@@ -861,7 +856,7 @@
   </div>
 </footer>
 
-<!--Modal cancel-->
+<!--Modal delivery info-->
 <div class="modal modal-delivery-info" id="courier">
   <div class="modal-delivery-info-content">
     <div class="modal-title">
@@ -898,14 +893,120 @@
         Выбрать этот способ доставки
       </span>
     </button>
-    <button class="button_link" type="button">
+    <button class="button_link" type="button" data-fancybox data-src="#more-about-delivery">
       <span class="uppercase">
         ПОДРОБНЕЕ О ДОСТАВКЕ
       </span>
     </button>
   </div>
 </div>
-<!--Modal cancel-->
+<!--Modal delivery info-->
+
+<!--Modal delivery info-->
+<div class="modal modal-delivery-info" id="courier-with-fitting">
+  <div class="modal-delivery-info-content text-center">
+    <p style="margin-top: 3em">
+      Примерка доступна для заказов не более 4 изделий.
+      Выберите доступный вариант доставки.
+    </p>
+    <button class="button_link" type="button" data-fancybox data-src="#more-about-delivery">
+      <span class="uppercase">
+        ПОДРОБНЕЕ О ДОСТАВКЕ
+      </span>
+    </button>
+  </div>
+</div>
+<!--Modal delivery info-->
+
+<!--Modal more about delivery-->
+<div class="modal modal-delivery-info" id="more-about-delivery">
+  <h2>
+    Доставка по России
+  </h2>
+  <h4>
+    Бесплатная доставка для заказов от 20 000 ₽.
+  </h4>
+  <p>
+    Способы доставки зависят от города. Чтобы увидеть возможные варианты доставки для вашего города, пожалуйста, заполните поле адреса при оформлении заказа.
+  </p>
+  <p>
+    Выберите удобный вам способ доставки:
+  </p>
+  <ul>
+    <li>
+      <b>Курьер</b><br>
+      Бесплатная доставка заказов на сумму от 20 000 ₽. Стоимость доставки заказов до 20 000 ₽ зависит от округа РФ.
+    </li>
+    <li>
+      <b>Курьер с примеркой</b><br>
+      Стоимость услуги примерки 1 000 ₽ оплачивается, если вы отказываетесь от заказа полностью. При выкупе заказа примерка бесплатная. Доступна для заказов не более 4 изделий. Возможен частичный выкуп заказа. Оплата при получении. Примерка доступна в городах: Москва, Санкт-Петербург, Казань, Екатеринбург, Новосибирск.
+    </li>
+    <li>
+      <b>Пункт выдачи СДЭК</b><br>
+      Бесплатная доставка заказов на сумму от 20 000 ₽. Стоимость доставки заказов до 20 000 ₽ зависит от округа РФ
+    </li>
+    <li>
+      Пункт выдачи СДЭК с примеркой<br>
+      Стоимость услуги примерки 1 000 ₽ оплачивается, если вы отказываетесь от заказа полностью. При выкупе заказа примерка бесплатная. Доступна для заказов не более 4 изделий. Возможен частичный выкуп заказа. Оплата при получении. Примерка доступна в городах: Москва, Санкт-Петербург, Казань, Екатеринбург, Новосибирск.
+    </li>
+  </ul>
+  <p>
+    Стоимость доставки заказов без примерки на сумму до 20 000 рублей в зависимости от округа:
+  </p>
+  <ul>
+    <li>
+      ЦФО — 350 ₽
+    </li>
+    <li>
+      Северо-Западный — 400 ₽
+    </li>
+    <li>
+      Южный — 450 ₽
+    </li>
+    <li>
+      Приволжский — 400 ₽
+    </li>
+    <li>
+      Уральский — 450 ₽
+    </li>
+    <li>
+      Сибирский — 550 ₽
+    </li>
+    <li>
+      Дальневосточный — 600 ₽
+    </li>
+  </ul>
+  <p>
+    Стоимость доставки заказов с услугой примерки — 1 000 рублей, не зависимо от суммы заказа.
+  </p>
+  <h2>
+    Доставка в другие страны
+  </h2>
+  <p>
+    Способы доставки зависят от региона. Чтобы увидеть возможные варианты доставки для вашего региона, пожалуйста, заполните поле адреса при оформлении заказа.
+  </p>
+  <p>
+    Стоимость доставки:
+  </p>
+  <ul>
+    <li>
+      Беларусь — 700 ₽
+    </li>
+    <li>
+      Казахстан — 1 500 ₽
+    </li>
+    <li>
+      Литва, Латвия, Молдова, Узбекистан, Грузия, Армения, Азербайджан, Туркменистан, Киргизия — 3 500 ₽
+    </li>
+  </ul>
+  <p>
+    Для всех остальных стран, пожалуйста, заполните поле адреса при оформлении заказа, чтобы узнать стоимость доставки.
+  </p>
+  <p>
+    <b>Внимание:</b> при заказе за границу (кроме Белоруссии, Казахстана) таможенные службы могут потребовать оплатить ввозную пошлину (10-30% в зависимости от страны). Если такие пошлины возникают, то их оплата лежит на стороне клиента – при получении заказа.
+  </p>
+</div>
+<!--Modal more about delivery-->
 
 
 <script src="../files/js/libs/jquery-3.4.1.min.js"></script>
